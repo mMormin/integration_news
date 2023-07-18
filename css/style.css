@@ -70,6 +70,9 @@ img {
   display: block;
   max-width: 100%;
 }
+h1, h2, h3, p {
+  color: #212529;
+}
 
 
 /*---------------------- STYLES ------------------------*/
@@ -78,6 +81,8 @@ img {
 
 body {
   font-family: 'Raleway', sans-serif;
+  height: 100vh;
+
 }
 
 p {
@@ -86,9 +91,8 @@ p {
 
 .main {
   display: flex;
-  flex-direction: row;
   font-size: 1.6rem;
-  min-height: 100vh;
+  height: 100%;
   width: 100%; 
 }
 
@@ -99,7 +103,7 @@ p {
 }
 
 .lefty {
-  background: url(../images/nicole.jpg) no-repeat 100% center;
+  background: url(../images/nicole.jpg) no-repeat left;
   background-size: cover;
   min-height: inherit;
   position: relative;
@@ -109,7 +113,6 @@ p {
 .lefty__header {
   display: flex;
   width: 100%;
-  flex-direction: row;
   margin: 4rem 0 0 2rem;
 }
 
@@ -130,7 +133,6 @@ p {
 .headband {
   position: relative;
   background-color: rgba(249, 249, 249, 0.2);
-  color: white;
   padding: 4rem 3.5rem;
   text-align: right;
   width: 90%;
@@ -148,6 +150,7 @@ p {
   font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .headband__subtitle {
@@ -159,6 +162,7 @@ p {
 .headband__content {
   width: 70%;
   margin-left: 30%;
+  color: white;
 }
 
 /* Nav bar */
@@ -185,27 +189,111 @@ p {
   text-decoration: underline;
   font-weight: 700;
   color: #0766F0;
+  text-shadow: none;
 }
 
 /* -------------- */
 /* RIGHTY WRAPPER */
-.righty__title {
 
+.righty {
+  background-color: #F9F9F9;
+  overflow: scroll;
+}
+
+.righty__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding: 3rem;
 }
 
 .articles {
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .article {
-  
+  border: 1px solid #EAEAEA;
+  min-height: 500px;
+  padding: 4rem;
+  width: 50%;
 }
 
+.article__header {
+  margin-bottom: 1rem;
+}
 
+.article__tag {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: gray;
+}
 
+.article__tag--news {
+  background-color: #98DC62;
+}
 
+.article__tag--team {
+  background-color: #DC5E53;
+}
 
+.article__tag--work {
+  background-color: #0466F0;
+}
 
+.article__title {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+  margin: 4rem 0 3rem 0;
+  width: 85%;
+}
+
+.article__author {
+  display: flex;
+  align-items: center;
+}
+
+.article__author-picture {
+  margin-right: 1.5rem;
+}
+
+.article__author-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.article__date {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.article__content {
+  overflow: hidden;
+  height: 17rem;
+}
+
+.article__footer {
+  margin-top: 3rem;
+}
+
+.article__link {
+  color: #0466F0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.article__link:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
 
 /* Transitions for everybody */
 .nav__link {

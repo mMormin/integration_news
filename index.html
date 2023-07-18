@@ -36,33 +36,42 @@
 
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__list-item"><a class="nav__link" href="#plan">Plan du site</a></li>
-            <li class="nav__list-item"><a class="nav__link" href="#mentions">Mentions légales</a></li>
-            <li class="nav__list-item"><a class="nav__link" href="#contact">Contact</a></li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#plan">Plan du site</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#mentions">Mentions légales</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </section>
 
       <section class="righty">
-        <h2 class="righty__title">Lastest news</h2>
+        <h2 class="righty__title">Latest news</h2>
         <div class="articles">
           <article class="article">
-            <header>
+            <header class="article__header">
               <span class="article__tag article__tag--news">news</span>
               <h3 class="article__title">Lorem ipsum dolor sit amet</h3>
+              <div class="article__author">
+                <img
+                  class="article__author-picture"
+                  src="./images/icon-john.png"
+                  alt="Photo de profil de l'auteur"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="article__author-name">John Marchill</span>
+                <span class="article__date"
+                  >le&nbsp;<time datetime="2019-07-21"
+                    >21 Juillet 2019</time
+                  ></span
+                >
+              </div>
             </header>
-
-            <div class="article__author">
-              <img
-                class="article__author-picture"
-                src=""
-                alt="Photo de profil de l'auteur"
-              />
-              <span class="article__author-name">John Marchill</span>
-              <span class="article__date"
-                >le<time datetime="2019-07-21">21 Juillet 2019</time></span
-              >
-            </div>
 
             <p class="article__content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -70,56 +79,58 @@
               tenais à le dire.
             </p>
 
-            <footer>
-              <a class="article__link" href="#">continue reading</a>
+            <footer class="article__footer">
+              <a class="article__link" href="#">Continue reading</a>
             </footer>
           </article>
 
           <article class="article">
-            <header>
+            <header class="article__header">
               <span class="article__tag article__tag--team">team</span>
               <h3 class="article__title">Le pair programming pour les n00bs</h3>
+              <div class="article__author">
+                <img
+                  class="article__author-picture"
+                  src="./images/icon-dar.png"
+                  alt="Photo de profil de l'auteur"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="article__author-name">Paul Darson</span>
+                <span class="article__date">
+                  le&nbsp;<time datetime="2019-08-02">2 Août 2019</time>
+                </span>
+              </div>
             </header>
-
-            <div class="article__author">
-              <img
-                class="article__author-picture"
-                src=""
-                alt="Photo de profil de l'auteur"
-              />
-              <span class="author__name">Paul Darson</span>
-              <span class="article__date">
-                le<time datetime="2019-08-02">2 Août 2019</time>
-              </span>
-            </div>
 
             <p class="article__content">
               Le pair programming pour les dévs, c'est un peu comme certains
               fromages : c'est mieux à deux.
             </p>
 
-            <footer>
+            <footer class="article__footer">
               <a class="article__link" href="#">Continue reading</a>
             </footer>
           </article>
 
           <article class="article">
-            <header>
+            <header class="article__header">
               <span class="article__tag article__tag--work">work</span>
               <h3 class="article__title">Pourquoi j'aime le JS ?</h3>
+              <div class="article__author">
+                <img
+                  class="article__author-picture"
+                  src="./images/icon-ohz.png"
+                  alt="Photo de profil de l'auteur"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="article__author-name">Bruce Ékoute</span>
+                <span class="article__date">
+                  le&nbsp;<time datetime="2019-09-07">7 Août 2019</time>
+                </span>
+              </div>
             </header>
-
-            <div class="article__author">
-              <img
-                class="article__author-picture"
-                src=""
-                alt="Photo de profil de l'auteur"
-              />
-              <span class="author__name">Bruce Ékoute</span>
-              <span class="article__date">
-                le<time datetime="2019-09-07">7 Août 2019</time>
-              </span>
-            </div>
 
             <p class="article__content">
               JavaScript est un langage très particulier, c'est indéniable. Je
@@ -127,28 +138,31 @@
               qui lui donnent une saveur si unique.
             </p>
 
-            <footer>
-              <a class="article__link" href="#">continue reading</a>
+            <footer class="article__footer">
+              <a class="article__link" href="#">Continue reading</a>
             </footer>
           </article>
 
           <article class="article">
-            <header>
+            <header class="article__header">
               <span class="article__tag article__tag--team">team</span>
               <h3 class="article__title">La situation de scribe</h3>
+              <div class="article__author">
+                <img
+                  class="article__author-picture"
+                  src="./images/icon-spr.png"
+                  alt="Photo de profil de l'auteur"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="article__author-name">Otis Reading</span>
+                <span class="article__date"
+                  >le&nbsp;<time datetime="2019-09-05"
+                    >5 Septembre 2019</time
+                  ></span
+                >
+              </div>
             </header>
-
-            <div class="article__author">
-              <img
-                class="article__author-picture"
-                src=""
-                alt="Photo de profil de l'auteur"
-              />
-              <span class="author__name">Otis Reading</span>
-              <span class="article__date"
-                >le<time datetime="2019-09-05">5 Septembre 2019</time></span
-              >
-            </div>
 
             <p class="article__content">
               Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de
@@ -159,58 +173,64 @@
               que les hasards, les rencontres forgent une destinée...
             </p>
 
-            <footer>
-              <a class="article__link" href="#">continue reading</a>
+            <footer class="article__footer">
+              <a class="article__link" href="#">Continue reading</a>
             </footer>
           </article>
 
           <article class="article">
-            <header>
+            <header class="article__header">
               <span class="article__tag article__tag--work">work</span>
               <h3 class="article__title">
                 Le travail : pourquoi ce n'est jamais naturel ?
               </h3>
+              <div class="article__author">
+                <img
+                  class="article__author-picture"
+                  src="./images/icon-tr.png"
+                  alt="Photo de profil de l'auteur"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="article__author-name"
+                  >Le prouveur d'Éperon de Wyverne</span
+                >
+                <span class="article__date">
+                  le&nbsp;<time datetime="2019-09-06">6 Septembre 2019</time>
+                </span>
+              </div>
             </header>
-
-            <div class="article__author">
-              <img
-                class="article__author-picture"
-                src=""
-                alt="Photo de profil de l'auteur"
-              />
-              <span class="author__name">Le prouveur d'Éperon de Wyverne</span>
-              <span class="article__date">
-                le<time datetime="2019-09-06">6 Septembre 2019</time>
-              </span>
-            </div>
 
             <p class="article__content">
               Le terme "travail" vient du latin "trepalium" qui signifie
               "torture". Voilà, je vous laisse avec ça.
             </p>
 
-            <footer>
-              <a class="article__link" href="#">continue reading</a>
+            <footer class="article__footer">
+              <a class="article__link" href="#">Continue reading</a>
             </footer>
           </article>
 
           <article class="article">
-            <header>
+            <header class="article__header">
               <span class="article__tag article__tag--news">news</span>
               <h3 class="article__title">Les chats augmentent la longévité</h3>
+              <div class="article__author">
+                <img
+                  class="article__author-picture"
+                  src="./images/icon-tre.png"
+                  alt="Photo de profil de l'auteur"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="article__author-name"
+                  >Rincevent Dent d'argent</span
+                >
+                <span class="article__date">
+                  le&nbsp;<time datetime="2019-09-27">27 Septembre 2019</time>
+                </span>
+              </div>
             </header>
-
-            <div class="article__author">
-              <img
-                class="article__author-picture"
-                src=""
-                alt="Photo de profil de l'auteur"
-              />
-              <span class="author__name">Rincevent Dent d'argent</span>
-              <span class="article__date">
-                <time datetime="2019-09-27">le 27 Septembre 2019</time>
-              </span>
-            </div>
 
             <p class="article__content">
               Jusqu'à un certain nombre. Au delà de 28 chats, les scientifiques
@@ -218,8 +238,8 @@
               budgétaire...
             </p>
 
-            <footer>
-              <a class="article__link" href="#">continue reading</a>
+            <footer class="article__footer">
+              <a class="article__link" href="#">Continue reading</a>
             </footer>
           </article>
         </div>
