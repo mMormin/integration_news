@@ -9,26 +9,36 @@
   </head>
 
   <body>
-    <header class="header">
-      <h1>o'clock students news</h1>
-    </header>
-
     <main class="main">
-      <section class="picture">
-        <p class="picture__title">
-          Latest news <span class="picture__subtitle">from our students</span>
-        </p>
-        <p class="picture__content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-          dignissimos minus, accusantium quisquam odit rem necessitatibus
-          voluptas optio maxime dolores hic minima a ducimus voluptatum
-          recusandae architecto sint. Nobis, blanditiis?
-        </p>
+      <section class="lefty">
+        <div class="lefty__header">
+          <img
+            class="lefty__logo"
+            src="./images/onews.svg"
+            alt=""
+            height="82px"
+            width="61px"
+          />
+          <h1 class="lefty__title">o'clock students news</h1>
+        </div>
+        <div class="headband">
+          <p class="headband__title">
+            Latest news
+            <span class="headband__subtitle">from our students</span>
+          </p>
+          <p class="headband__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+            dignissimos minus, accusantium quisquam odit rem necessitatibus
+            voluptas optio maxime dolores hic minima a ducimus voluptatum
+            recusandae architecto sint. Nobis, blanditiis?
+          </p>
+        </div>
+
         <nav class="nav">
-          <ul>
-            <li><a href="#plan">Plan du site</a></li>
-            <li><a href="#mentions">Mentions légales</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#plan">Plan du site</a></li>
+            <li><a class="nav__link" href="#mentions">Mentions légales</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </section>
@@ -42,25 +52,23 @@
               <h3 class="article__title">Lorem ipsum dolor sit amet</h3>
             </header>
 
-            <main>
-              <div class="article__author">
-                <img
-                  class="author__picture"
-                  src=""
-                  alt="Photo de profil de l'auteur"
-                />
-                <span class="author__name">John Marchill</span>
-                <span class="article__date"
-                  >le<time datetime="2019-07-21">21 Juillet 2019</time></span
-                >
-              </div>
+            <div class="article__author">
+              <img
+                class="author__lefty"
+                src=""
+                alt="Photo de profil de l'auteur"
+              />
+              <span class="author__name">John Marchill</span>
+              <span class="article__date"
+                >le<time datetime="2019-07-21">21 Juillet 2019</time></span
+              >
+            </div>
 
-              <p class="article__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque scelerisque suscipit nibh quis porttitor. Voilà, je
-                tenais à le dire.
-              </p>
-            </main>
+            <p class="article__content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque scelerisque suscipit nibh quis porttitor. Voilà, je
+              tenais à le dire.
+            </p>
 
             <footer>
               <a class="article__link" href="#">continue reading</a>
@@ -73,24 +81,22 @@
               <h3 class="article__title">Le pair programming pour les n00bs</h3>
             </header>
 
-            <main>
-              <div class="article__author">
-                <img
-                  class="author__picture"
-                  src=""
-                  alt="Photo de profil de l'auteur"
-                />
-                <span class="author__name">Paul Darson</span>
-                <span class="article__date">
-                  le<time datetime="2019-08-02">2 Août 2019</time>
-                </span>
-              </div>
+            <div class="article__author">
+              <img
+                class="author__lefty"
+                src=""
+                alt="Photo de profil de l'auteur"
+              />
+              <span class="author__name">Paul Darson</span>
+              <span class="article__date">
+                le<time datetime="2019-08-02">2 Août 2019</time>
+              </span>
+            </div>
 
-              <p class="article__content">
-                Le pair programming pour les dévs, c'est un peu comme certains
-                fromages : c'est mieux à deux.
-              </p>
-            </main>
+            <p class="article__content">
+              Le pair programming pour les dévs, c'est un peu comme certains
+              fromages : c'est mieux à deux.
+            </p>
 
             <footer>
               <a class="article__link" href="#">Continue reading</a>
@@ -103,25 +109,23 @@
               <h3 class="article__title">Pourquoi j'aime le JS ?</h3>
             </header>
 
-            <main>
-              <div class="article__author">
-                <img
-                  class="author__picture"
-                  src=""
-                  alt="Photo de profil de l'auteur"
-                />
-                <span class="author__name">Bruce Ékoute</span>
-                <span class="article__date">
-                  le<time datetime="2019-09-07">7 Août 2019</time>
-                </span>
-              </div>
+            <div class="article__author">
+              <img
+                class="author__lefty"
+                src=""
+                alt="Photo de profil de l'auteur"
+              />
+              <span class="author__name">Bruce Ékoute</span>
+              <span class="article__date">
+                le<time datetime="2019-09-07">7 Août 2019</time>
+              </span>
+            </div>
 
-              <p class="article__content">
-                JavaScript est un langage très particulier, c'est indéniable. Je
-                vous propose de faire le tour de toutes ces petites choses
-                simples qui lui donnent une saveur si unique.
-              </p>
-            </main>
+            <p class="article__content">
+              JavaScript est un langage très particulier, c'est indéniable. Je
+              vous propose de faire le tour de toutes ces petites choses simples
+              qui lui donnent une saveur si unique.
+            </p>
 
             <footer>
               <a class="article__link" href="#">continue reading</a>
@@ -134,26 +138,26 @@
               <h3 class="article__title">La situation de scribe</h3>
             </header>
 
-            <main>
-              <div class="article__author">
-                <img
-                  class="author__picture"
-                  src=""
-                  alt="Photo de profil de l'auteur"
-                />
-                <span class="author__name">Otis Reading</span>
-                <span class="article__date">le<time datetime="2019-09-05">5 Septembre 2019</time></span>
-              </div>
+            <div class="article__author">
+              <img
+                class="author__lefty"
+                src=""
+                alt="Photo de profil de l'auteur"
+              />
+              <span class="author__name">Otis Reading</span>
+              <span class="article__date"
+                >le<time datetime="2019-09-05">5 Septembre 2019</time></span
+              >
+            </div>
 
-              <p class="article__content">
-                Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de
-                mauvaise situation. Moi, si je devais résumer ma vie aujourd'hui
-                avec vous, je dirais que c'est d'abord des rencontres, des gens
-                qui m'ont tendu la main, peut-être à un moment où je ne pouvais
-                pas, où j'étais seul chez moi. Et c'est assez curieux de se dire
-                que les hasards, les rencontres forgent une destinée...
-              </p>
-            </main>
+            <p class="article__content">
+              Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de
+              mauvaise situation. Moi, si je devais résumer ma vie aujourd'hui
+              avec vous, je dirais que c'est d'abord des rencontres, des gens
+              qui m'ont tendu la main, peut-être à un moment où je ne pouvais
+              pas, où j'étais seul chez moi. Et c'est assez curieux de se dire
+              que les hasards, les rencontres forgent une destinée...
+            </p>
 
             <footer>
               <a class="article__link" href="#">continue reading</a>
@@ -168,26 +172,22 @@
               </h3>
             </header>
 
-            <main>
-              <div class="article__author">
-                <img
-                  class="author__picture"
-                  src=""
-                  alt="Photo de profil de l'auteur"
-                />
-                <span class="author__name"
-                  >Le prouveur d'Éperon de Wyverne</span
-                >
-                <span class="article__date">
-                  le<time datetime="2019-09-06">6 Septembre 2019</time>
-                </span>
-              </div>
+            <div class="article__author">
+              <img
+                class="author__lefty"
+                src=""
+                alt="Photo de profil de l'auteur"
+              />
+              <span class="author__name">Le prouveur d'Éperon de Wyverne</span>
+              <span class="article__date">
+                le<time datetime="2019-09-06">6 Septembre 2019</time>
+              </span>
+            </div>
 
-              <p class="article__content">
-                Le terme "travail" vient du latin "trepalium" qui signifie
-                "torture". Voilà, je vous laisse avec ça.
-              </p>
-            </main>
+            <p class="article__content">
+              Le terme "travail" vient du latin "trepalium" qui signifie
+              "torture". Voilà, je vous laisse avec ça.
+            </p>
 
             <footer>
               <a class="article__link" href="#">continue reading</a>
@@ -200,25 +200,23 @@
               <h3 class="article__title">Les chats augmentent la longévité</h3>
             </header>
 
-            <main>
-              <div class="article__author">
-                <img
-                  class="author__picture"
-                  src=""
-                  alt="Photo de profil de l'auteur"
-                />
-                <span class="author__name">Rincevent Dent d'argent</span>
-                <span class="article__date">
-                  <time datetime="2019-09-27">le 27 Septembre 2019</time>
-                </span>
-              </div>
+            <div class="article__author">
+              <img
+                class="author__lefty"
+                src=""
+                alt="Photo de profil de l'auteur"
+              />
+              <span class="author__name">Rincevent Dent d'argent</span>
+              <span class="article__date">
+                <time datetime="2019-09-27">le 27 Septembre 2019</time>
+              </span>
+            </div>
 
-              <p class="article__content">
-                Jusqu'à un certain nombre. Au delà de 28 chats, les
-                scientifiques semblent quelque peu sceptiques. Surtout sur
-                l'aspect budgétaire...
-              </p>
-            </main>
+            <p class="article__content">
+              Jusqu'à un certain nombre. Au delà de 28 chats, les scientifiques
+              semblent quelque peu sceptiques. Surtout sur l'aspect
+              budgétaire...
+            </p>
 
             <footer>
               <a class="article__link" href="#">continue reading</a>

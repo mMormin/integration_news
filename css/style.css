@@ -78,5 +78,109 @@ img {
 
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+p {
+  line-height: 2.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
   min-height: 100vh;
+  width: 100%; 
+}
+
+.lefty, .content {
+  width: 50%;
+}
+
+.lefty {
+  background: url(../images/nicole.jpg) no-repeat center;
+  background-size: cover;
+  min-height: inherit;
+  position: relative;
+}
+
+.lefty__header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 4rem 0 0 2rem;
+}
+
+.lefty__logo {
+  margin-right: 2rem;
+}
+
+.lefty__title {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.headband {
+  background-color: rgba(249, 249, 249, 0.2);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: right;
+  width: 80%;
+  margin: 0 auto;
+  top: 40%;
+  transform: translateY(-50%);
+  position: relative;
+  
+}
+
+.headband__title, .headband__subtitle, .headband__content, .nav__link {
+  text-shadow: 1px 1px 2px rgb(119, 119, 119);
+}
+
+.headband__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.headband__subtitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.headband__content {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.nav {
+  position: absolute;
+  bottom: 2rem;
+  color: white;
+  width: 50%;
+  right: 0;
+
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* TRANSITIONS */
+.nav__link {
+  transition: all 0.3s ease-in;
+}
+
+.nav__link:hover {
+  transition: all 0.2s ease-out;
 }
