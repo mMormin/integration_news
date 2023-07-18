@@ -1,3 +1,5 @@
+@import url('font.css');
+
 /*---------------------- RESET CSS ------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -77,10 +79,8 @@ h1, h2, h3, p {
 
 /*---------------------- STYLES ------------------------*/
 /* GLOBAL */
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:ital,wght@0,700;1,400&display=swap');
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
 
@@ -88,7 +88,7 @@ p {
   line-height: 2.5rem;
 }
 
-.main {
+main {
   display: flex;
   font-size: 1.6rem;
   height: 100%;
@@ -109,23 +109,22 @@ p {
   height: auto;
 }
 
-.lefty__header {
+.header {
   display: flex;
-  width: 100%;
   margin: 4rem 0 0 2rem;
 }
 
-.lefty__logo {
-  margin-right: 2rem;
+.header__logo {
+  margin-right: 1.5rem;
 }
 
-.lefty__title {
+.header__title {
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 300px;
-  word-wrap: break-word;
+  word-spacing: 100vw; /* Forcer chaque mot à la ligne */
 }
 
 /* Headband */
@@ -138,11 +137,12 @@ p {
   margin: 0 auto;
   top: 40%;
   transform: translateY(-50%);
+  box-shadow: 0 4px 9px 0px rgb(0 0 0 / 17%);
 }
 
 /* Text shadow on white elements */
-.headband__title, .headband__subtitle, .headband__content, .nav__link {
-  text-shadow: 1px 1px 2px rgb(119, 119, 119);
+.headband__title, .headband__subtitle, .headband__content {
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 72%);
 }
 
 .headband__title {
@@ -168,13 +168,14 @@ p {
 .nav {
   position: absolute;
   bottom: 2rem;
-  color: white;
-  width: 100%;
-  right: 0;
+  width: 50%;
+  left: 0;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 3px 8px -4px black;
 }
 
 .nav__list-item {
-  padding: 0 1rem;
   width: 155px;
   text-align: center;
 }
@@ -184,11 +185,15 @@ p {
   justify-content: flex-end;
 }
 
+.nav__link {
+  display: inline-block;
+  padding: 18px 0;
+  font-weight: 600;
+}
+
 .nav__link:hover {
   text-decoration: underline;
-  font-weight: 700;
   color: #0766F0;
-  text-shadow: none;
 }
 
 /* -------------- */
@@ -201,9 +206,11 @@ p {
 }
 
 .righty__title {
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 3.9rem;
+  font-weight: 900;
   padding: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .articles {
@@ -215,7 +222,7 @@ p {
 
 .article {
   border: 1px solid #EAEAEA;
-  min-height: 500px;
+  min-height: 480px;
   padding: 4rem;
   width: 50%;
 }
@@ -228,11 +235,12 @@ p {
   color: white;
   font-size: 1.4rem;
   line-height: 1.4rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   padding: 5px;
   border-radius: 5px;
   background-color: gray;
+  letter-spacing: 1px;
 }
 
 .article__tag--news {
@@ -250,9 +258,8 @@ p {
 .article__title {
   font-size: 3rem;
   line-height: 4rem;
-  font-weight: 700;
-  margin: 4rem 0 3rem 0;
-  width: 85%;
+  font-weight: 600;
+  margin: 3rem 0 2rem 0;
 }
 
 .article__author {
@@ -265,7 +272,7 @@ p {
 }
 
 .article__author-name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-right: 0.5rem;
 }
