@@ -82,7 +82,6 @@ h1, h2, h3, p {
 body {
   font-family: 'Raleway', sans-serif;
   height: 100vh;
-
 }
 
 p {
@@ -197,7 +196,8 @@ p {
 
 .righty {
   background-color: #F9F9F9;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .righty__title {
