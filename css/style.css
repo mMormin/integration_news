@@ -92,15 +92,18 @@ p {
   width: 100%; 
 }
 
-.lefty, .content {
+/* -------------- */
+/* LEFT WRAPPER */
+.lefty, .righty {
   width: 50%;
 }
 
 .lefty {
-  background: url(../images/nicole.jpg) no-repeat center;
+  background: url(../images/nicole.jpg) no-repeat 100% center;
   background-size: cover;
   min-height: inherit;
   position: relative;
+  height: auto;
 }
 
 .lefty__header {
@@ -123,19 +126,20 @@ p {
   word-wrap: break-word;
 }
 
+/* Headband */
 .headband {
+  position: relative;
   background-color: rgba(249, 249, 249, 0.2);
   color: white;
-  padding: 4rem 2rem;
+  padding: 4rem 3.5rem;
   text-align: right;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   top: 40%;
   transform: translateY(-50%);
-  position: relative;
-  
 }
 
+/* Text shadow on white elements */
 .headband__title, .headband__subtitle, .headband__content, .nav__link {
   text-shadow: 1px 1px 2px rgb(119, 119, 119);
 }
@@ -157,26 +161,53 @@ p {
   margin-left: 30%;
 }
 
+/* Nav bar */
 .nav {
   position: absolute;
   bottom: 2rem;
   color: white;
-  width: 50%;
+  width: 100%;
   right: 0;
+}
 
+.nav__list-item {
+  padding: 0 1rem;
+  width: 155px;
+  text-align: center;
 }
 
 .nav__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .nav__link:hover {
   text-decoration: underline;
   font-weight: 700;
+  color: #0766F0;
 }
 
-/* TRANSITIONS */
+/* -------------- */
+/* RIGHTY WRAPPER */
+.righty__title {
+
+}
+
+.articles {
+
+}
+
+.article {
+  
+}
+
+
+
+
+
+
+
+/* Transitions for everybody */
 .nav__link {
   transition: all 0.3s ease-in;
 }
