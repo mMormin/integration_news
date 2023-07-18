@@ -225,6 +225,7 @@ main {
   min-height: 480px;
   padding: 4rem;
   width: 50%;
+  background-color: white;
 }
 
 .article__header {
