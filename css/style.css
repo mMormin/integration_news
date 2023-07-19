@@ -1,12 +1,7 @@
-/*---------------------- IMPORT AND VARIABLES ------------------------*/
+/*---------------------- IMPORTS AND VARIABLES ------------------------*/
 @import url('font.css');
 
 :root {
-  /*
-    syntaxe :
-     - déclaration : --ma-variable: valeur;
-     - utilisation : `propriété: var(--ma-variable);`
-  */
   --color-lightest: #fff;
   --color-default: #212529;
   --color-gray: #666;
@@ -17,15 +12,12 @@
   
   --bg-main: #f9f9f9;
 
-  --border-article: #eaeaea;
-
   --font-sans: 'Poppins', sans-serif;
   --font-size-tiny: 1.4rem;
   --font-size-default: 1.6rem;
 
   --font-bold: 700;
 
-  /* utile pour notamment les espacements (margin, padding) */
   --gutter: 3rem;
   --gutter-bigger: 4rem 3.5rem;
 }
@@ -90,10 +82,10 @@ h1,h2,h3 {
   padding: 0;
 }
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 *::before, *::after {
-  box-sizing: inherit
+  box-sizing: inherit;
 }
 input, button {
   outline: 0;
