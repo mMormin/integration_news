@@ -1,4 +1,35 @@
+/*---------------------- IMPORT AND VARIABLES ------------------------*/
 @import url('font.css');
+
+:root {
+  /*
+    syntaxe :
+     - déclaration : --ma-variable: valeur;
+     - utilisation : `propriété: var(--ma-variable);`
+  */
+  --color-lightest: #fff;
+  --color-default: #212529;
+  --color-gray: #666;
+  --color-blue: #0766f0;
+  --color-dblue: #0056b3;
+  --color-green: #98dc62;
+  --color-red: #dc5e53;
+  
+  --bg-main: #f9f9f9;
+
+  --border-article: #eaeaea;
+
+  --font-sans: 'Poppins', sans-serif;
+  --font-size-tiny: 1.4rem;
+  --font-size-default: 1.6rem;
+  --font-size-big: 1.6rem;
+
+  --font-bold: 700;
+
+  /* utile pour notamment les espacements (margin, padding) */
+  --gutter: 3rem;
+  --gutter-bigger: 4rem 3.5rem;
+}
 
 /*---------------------- RESET CSS ------------------------*/
 html, body, div, span, applet, object, iframe,
@@ -72,46 +103,48 @@ img {
   display: block;
   max-width: 100%;
 }
-h1, h2, h3, p {
-  color: #212529;
-}
-
 
 /*---------------------- STYLES ------------------------*/
 /* GLOBAL */
 body {
-  font-family: 'Poppins', sans-serif;
+  display: flex;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-default);
   height: 100vh;
+  overflow: hidden;
+}
+
+strong {
+  font-weight: var(--font-bold);
+}
+
+h3, p {
+  color: var(--color-default);
 }
 
 p {
   line-height: 2.5rem;
 }
 
-main {
-  display: flex;
-  font-size: 1.6rem;
-  height: 100%;
-  width: 100%; 
+.header, .main {
+  width: 50vw;
 }
 
 /* -------------- */
-/* LEFT WRAPPER */
-.lefty, .righty {
-  width: 50%;
-}
-
-.lefty {
+/* LEFT RIGHTY WRAPPER */
+.header {
   background: url(../images/nicole.jpg) no-repeat left;
   background-size: cover;
-  min-height: inherit;
-  position: relative;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header {
+.header__top {
   display: flex;
-  margin: 4rem 0 0 2rem;
+  align-items: flex-start;
+  margin: 4rem 0 0 3.5rem;
+  color: var(--color-lightest);
 }
 
 .header__logo {
@@ -119,96 +152,87 @@ main {
 }
 
 .header__title {
-  color: white;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-transform: uppercase;
-  width: 300px;
-  word-spacing: 100vw; /* Forcer chaque mot à la ligne */
+  width: 1px;
 }
 
 /* Headband */
-.headband {
-  position: relative;
+.header__headband {
   background-color: rgba(249, 249, 249, 0.2);
-  padding: 4rem 3.5rem;
+  padding: var(--gutter-bigger);
   text-align: right;
   width: 90%;
   margin: 0 auto;
-  top: 40%;
-  transform: translateY(-50%);
   box-shadow: 0 4px 9px 0px rgb(0 0 0 / 17%);
 }
 
 /* Text shadow on white elements */
-.headband__title, .headband__subtitle, .headband__content {
+.header__headband-title, .header__headband-subtitle, .header__headband-description {
   text-shadow: 1px 1px 1px rgb(0 0 0 / 72%);
 }
 
-.headband__title {
+.header__headband-title {
+  color: var(--color-lightest);
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   margin-bottom: 2rem;
-  color: white;
 }
 
-.headband__subtitle {
+.header__headband-subtitle {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--font-size-default);
   font-style: italic;
 }
 
-.headband__content {
+.header__headband-description {
+  color: var(--color-lightest);
   width: 70%;
   margin-left: 30%;
-  color: white;
 }
 
 /* Nav bar */
-.nav {
-  position: absolute;
-  bottom: 2rem;
-  width: 50%;
-  left: 0;
-  background-color: white;
-  border-radius: 0 5px 5px 0;
+.header__nav {
+  margin: 0 0 1rem auto;
+  background-color: var(--color-lightest);
+  border-radius: 5px 0 0 5px;
   box-shadow: 0 3px 8px -4px black;
 }
 
-.nav__list-item {
-  width: 155px;
-  text-align: center;
-}
-
-.nav__list {
+.header__nav-list {
   display: flex;
   justify-content: flex-end;
 }
 
-.nav__link {
+.header__nav-item {
+  width: 155px;
+  text-align: center;
+}
+
+.header__nav-link {
   display: inline-block;
-  padding: 18px 0;
+  padding: 15px 0;
   font-weight: 600;
 }
 
-.nav__link:hover {
+.header__nav-link:hover {
   text-decoration: underline;
   color: #0766F0;
 }
 
 /* -------------- */
-/* RIGHTY WRAPPER */
-
-.righty {
-  background-color: #F9F9F9;
+/* MAIN RIGHTY WRAPPER */
+.main {
+  background-color: var(--bg-main);
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.righty__title {
+.main__title {
   font-size: 3.9rem;
   font-weight: 900;
-  padding: 3rem;
+  padding: var(--gutter);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -223,37 +247,43 @@ main {
 .article {
   border: 1px solid #EAEAEA;
   min-height: 480px;
-  padding: 4rem;
+  padding: calc(var(--gutter) * 1.5);
   width: 50%;
-  background-color: white;
+  background-color: var(--color-lightest);
 }
 
 .article__header {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
 
+.article__tags {
+  order: -1;
+}
+
 .article__tag {
-  color: white;
-  font-size: 1.4rem;
+  color: var(--color-lightest);
+  font-size: var(--font-size-tiny);
   line-height: 1.4rem;
   font-weight: 800;
   text-transform: uppercase;
   padding: 5px;
   border-radius: 5px;
-  background-color: gray;
+  background-color: var(--color-gray);
   letter-spacing: 1px;
 }
 
 .article__tag--news {
-  background-color: #98DC62;
+  background-color: var(--color-green);
 }
 
 .article__tag--team {
-  background-color: #DC5E53;
+  background-color: var(--color-red);
 }
 
 .article__tag--work {
-  background-color: #0466F0;
+  background-color: var(--color-blue);
 }
 
 .article__title {
@@ -263,23 +293,23 @@ main {
   margin: 3rem 0 2rem 0;
 }
 
-.article__author {
+.article__infos {
   display: flex;
   align-items: center;
 }
 
-.article__author-picture {
+.article__author-avatar {
   margin-right: 1.5rem;
 }
 
-.article__author-name {
-  font-size: 1.4rem;
-  font-weight: 700;
+.article__author {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-bold);
   margin-right: 0.5rem;
 }
 
 .article__date {
-  color: grey;
+  color: var(--color-gray);
   font-size: 1.2rem;
 }
 
@@ -289,18 +319,18 @@ main {
 }
 
 .article__footer {
-  margin-top: 3rem;
+  margin-top: var(--gutter);
 }
 
 .article__link {
-  color: #0466F0;
+  color: var(--color-blue);
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .article__link:hover {
   text-decoration: none;
-  color: #0056b3;
+  color: var(--color-dblue);
 }
 
 /* Transitions for everybody */
